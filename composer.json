@@ -1,0 +1,33 @@
+{
+    "name": "deadlyviruz/Extentions",
+    "description": "This is a Extention Package",
+    "authors": [
+        {
+            "name": "Deadlyviruz",
+            "email": "trasviruz@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/support": "5.5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Deadlyviurz\\Extentions\\": "src/"
+        }
+    },
+    "suggest": {
+        "wikimedia/composer-merge-plugin": "Allows the ability to create and merge composer.json files for your individual modules for module-specific dependency management."
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Deadlyviurz\\Extentions\\ExtentionsServiceProvider"
+            ],
+            "aliases": {
+                "Extention": "Deadlyviurz\\Extentions\\Facades\\Extention"
+            }
+        }
+    }
+}
